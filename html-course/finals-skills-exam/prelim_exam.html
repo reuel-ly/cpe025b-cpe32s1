@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Chess Player Style Survey
+    </h1>
+    <p>
+        This survey aims to find which style of players in Chess are Prevalent
+    </p>
+
+    <form>
+        <label id="name">
+            Name:
+            <input type="text" pattern="[A-Za-z]" placeholder="juan Dela Cruz"> 
+        </label>
+        <br><br>
+        <label id="email">
+            Email:
+            <input type="email" placeholder="name@email.com"> 
+        </label>
+        <br><br>
+        <label id="password">
+            Password:
+            <input type="password" id="password"> 
+        </label>
+        <br><br>
+        <label id="Age">
+            Age:
+            <input type="number" pattern="[0-9]" min="18" max="120" value="18"> 
+        </label>
+
+        <br><br>
+        <div>
+            Gender:
+            <label>
+                <input type="radio" name="linked-together"> Male
+                <input type="radio" name="linked-together"> Female
+            </label>
+        </div>
+
+        <br><br><br><br>
+        <div>
+            Pick your preferred Style
+            <br>
+            <select type="dropdown" aria-valuetext="Top">
+            <option>
+                Aggressive
+            </option> 
+            <option>
+                Passive
+            </option>
+            <option>
+                Positional
+            </option>
+            </select>
+        </div>
+        <br><br>
+        <div>
+            
+            Type of Chess Position:
+            <br>
+            <input type="checkbox"> Open
+            <input type="checkbox"> Close
+            <input type="checkbox"> Mirror
+        </div>
+        <br><br>
+        <label>
+            Favorite Chess Player:
+            <br>
+            <input type="textarea"  placeholder="Hikaru Nakamura">
+        </label>
+        <label>
+            <input type="button" value="Submit">
+        </label>
+        
+
+    </form>
+
+
+</body>
+</html>
