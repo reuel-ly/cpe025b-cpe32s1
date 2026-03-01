@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.header, .footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00f5d4;
+}
+
+.footer {
+  border-top: 2px solid #00f5d4;
+  border-bottom: none;
+}
+
+.header h1 {
+  font-size: 2em;
+  color: #00f5d4;
+}
+
+.footer p {
+  color: #adadad;
+}
+
+main {
+  padding: 20px;
+}
+main .about, main .features, main .example {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 245, 212, 0.1);
+}
+main h2 {
+  font-size: 1.5em;
+  color: #00f5d4;
+  margin-bottom: 15px;
+}
+main .feature-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+main .feature-list li {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: rgb(42.75, 42.75, 42.75);
+  border-left: 4px solid #00f5d4;
+  transition: 0.3s ease;
+}
+main .feature-list li:hover {
+  background-color: rgb(55.5, 55.5, 55.5);
+  transform: translateX(5px);
+}
+main .example-text {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(42.75, 42.75, 42.75);
+  border: 1px solid #00f5d4;
+}
