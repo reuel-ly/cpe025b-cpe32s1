@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <div class="container">
+            <h1>Accessible Web Design</h1>
+            <p class="tagline">Designing inclusive experiences for everyone</p>
+        </div>
+    </header>
+
+    <nav class="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <ul class="navigation-menu">
+                <li><a href="/" aria-current="page">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container layout">
+
+        <aside class="sidebar" aria-label="Sidebar">
+            <h2 class="sidebar-title">Resources</h2>
+            <ul>
+                <li><a href="#">Accessibility Guidelines</a></li>
+                <li><a href="#">WCAG Overview</a></li>
+                <li><a href="#">ARIA Reference</a></li>
+            </ul>
+        </aside>
+
+        <main id="main-content" class="main-content" role="main">
+
+            <section class="about">
+                <h2>About Us</h2>
+                <p>
+                    We are dedicated to building inclusive digital experiences 
+                    that meet accessibility standards and ensure equal access for all users.
+                </p>
+            </section>
+
+            <section class="features">
+                <h2>Accessibility Features</h2>
+                <ul class="feature-list">
+                    <li>Clear and consistent navigation</li>
+                    <li>Visible keyboard focus indicators</li>
+                    <li>Readable typography and spacing</li>
+                    <li>High color contrast ratios</li>
+                    <li>Screen reader optimized structure</li>
+                </ul>
+                <p>
+                    For more information, visit our 
+                    <a href="https://example.com">Help Center</a>.
+                </p>
+            </section>
+
+            <section class="example">
+                <h2>Text Accessibility Examples</h2>
+                <p>
+                    This is standard body text optimized for readability with proper 
+                    line height and contrast.
+                </p>
+
+                <p class="large-text">
+                    This text is larger for improved visibility.
+                </p>
+
+                <div class="high-contrast-text">
+                    High contrast example: black text on a white background for maximum clarity.
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2050 Accessible Web Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
