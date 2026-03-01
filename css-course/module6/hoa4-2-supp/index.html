@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Porsche 911</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('header').classList.add('visible');
+    });
+    </script>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="projects">
-            <div class="project-card">
-                <h2>Project 1</h2>
-                <p>Description of project 1.</p>
-            </div>
-            <div class="project-card">
-                <h2>Project 2</h2>
-                <p>Description of project 2.</p>
-            </div>
-            <div class="project-card">
-                <h2>Project 3</h2>
-                <p>Description of project 3.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 My Portfolio</p>
-    </footer>
+
+<header>
+    <h1>Porsche 911</h1>
+    <p class="subtitle">Engineered for Emotion</p>
+</header>
+
+<main>
+
+    <section class="product-intro">
+        <div class="overlay"></div>
+        <img src="porsche.png" alt="Porsche 911" class="product-image">
+        <button class="buy-now">Reserve Now</button>
+    </section>
+
+    <section class="features">
+        <h2>Performance Highlights</h2>
+        <ul>
+            <li class="feature-item">3.0L Twin-Turbo Engine</li>
+            <li class="feature-item">0-100 km/h in 3.5 seconds</li>
+            <li class="feature-item">Premium Leather Interior</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Porsche Showcase</p>
+</footer>
+
 </body>
 </html>

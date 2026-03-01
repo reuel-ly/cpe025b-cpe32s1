@@ -6,51 +6,89 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
-nav a {
+header h1 {
+    margin: 0;
+}
+
+header.visible {
+    opacity: 1;
+}
+
+.product-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-image {
+    width: 300px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.buy-now {
+    background-color: #4CAF50;
     color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.buy-now:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.features {
     padding: 20px;
 }
 
-.project-card {
+.features h2 {
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
     background-color: #f4f4f4;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px;
     border: 1px solid #ddd;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards;
 }
 
-@media (max-width: 768px) {
-    .projects {
-        grid-template-columns: 1fr;
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
     }
+}
 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.feature-item:nth-child(2) {
+    animation-delay: 0.5s;
+}
 
-    nav a {
-        margin: 5px 0;
-    }
+.feature-item:nth-child(3) {
+    animation-delay: 1s;
 }
 
 footer {
