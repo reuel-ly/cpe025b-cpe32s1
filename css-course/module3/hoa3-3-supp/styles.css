@@ -1,0 +1,177 @@
+/* Global */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:url('https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg') center/cover no-repeat;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+/* Main Layout */
+
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* Product Section */
+
+.product-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-bottom:60px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.product-image{
+    position:relative;
+}
+
+.product-image img{
+    width:100%;
+    display:block;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff4d4d;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+.product-content{
+    padding:20px;
+}
+
+.product-content h2{
+    margin-bottom:10px;
+}
+
+/* Table */
+
+.product-specs{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.product-specs th{
+    background:#353535;
+    color:white;
+}
+
+.product-specs th,
+.product-specs td{
+    padding:12px;
+    text-align:left;
+}
+
+.product-specs tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* Contact Section */
+
+.contact-section{
+    text-align:center;
+}
+
+.contact-section h2{
+    margin-bottom:20px;
+}
+
+.contact-form{
+    max-width:400px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form label{
+    display:block;
+    margin-top:10px;
+    text-align:left;
+}
+
+.contact-form input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact-form button{
+    margin-top:15px;
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#43a047;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#333;
+    color:white;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.product-section{
+    grid-template-columns:1fr;
+}
+
+}

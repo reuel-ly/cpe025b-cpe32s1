@@ -1,0 +1,135 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f5f7fa;
+    line-height:1.6;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#1f2937;
+    color:white;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#e5e7eb;
+}
+
+.hero h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+/* Containers */
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* Feature Cards */
+.features{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+/* Grid Section */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.grid-item{
+    background:#3b82f6;
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-radius:6px;
+}
+
+/* Blog Post */
+.post{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.post img{
+    width:300px;
+    border-radius:8px;
+}
+
+.post div{
+    flex:1;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f2937;
+    color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.features{
+    flex-direction:column;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:10px;
+}
+
+.post{
+    flex-direction:column;
+}
+
+.post img{
+    width:100%;
+}
+
+}
